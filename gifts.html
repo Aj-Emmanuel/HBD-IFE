@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Presents For You!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body class="page-gifts">
+
+  <div class="bg-deco">
+    <div class="deco deco-grass"></div>
+    <div class="deco deco-flowers-left"></div>
+    <div class="deco deco-flowers-right"></div>
+    <div class="floating-hearts">
+      <span>🌸</span><span>💐</span><span>🎀</span><span>🌷</span><span>✨</span>
+    </div>
+  </div>
+
+  <main class="gifts-main">
+    <div class="top-strip">
+      <span>🎁</span><span>🌸</span><span>🎀</span><span>🌷</span><span>🍰</span><span>🌸</span><span>🎁</span>
+    </div>
+
+    <div class="gifts-card">
+      <div class="card-corner card-corner--tl">🌸</div>
+      <div class="card-corner card-corner--tr">🎀</div>
+      <div class="card-corner card-corner--bl">🌷</div>
+      <div class="card-corner card-corner--br">✨</div>
+
+      <h2 class="gifts-title">Presents for you</h2>
+      <p class="gifts-hint">CLICK ANY GIFT TO OPEN</p>
+
+      <div class="gifts-row">
+        <!-- Envelope → Letter page -->
+        <div class="gift-item" onclick="navigateTo('letter.html')" title="Open Letter">
+          <div class="gift-icon gift-envelope">
+            <div class="envelope-body">
+              <div class="envelope-flap"></div>
+              <div class="envelope-seal">❤️</div>
+            </div>
+          </div>
+          <span class="gift-label">A Letter</span>
+        </div>
+
+        <!-- Heart → Gallery page -->
+        <div class="gift-item gift-item--center" onclick="navigateTo('gallery.html')" title="Gallery of Love">
+          <div class="gift-icon gift-heart">
+            <div class="heart-box">
+              <div class="heart-ribbon-h"></div>
+              <div class="heart-ribbon-v"></div>
+              <span class="heart-emoji">❤️</span>
+            </div>
+          </div>
+          <span class="gift-label">Gallery</span>
+        </div>
+
+        <!-- Lollipop → Video page -->
+        <div class="gift-item" onclick="navigateTo('video.html')" title="Watch Video">
+          <div class="gift-icon gift-lollipop">
+            <span class="lollipop-emoji">🍭</span>
+          </div>
+          <span class="gift-label">A Video</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="bottom-strip">
+      <span>🌸</span><span>🎀</span><span>🌷</span><span>💕</span><span>🌸</span><span>🎀</span><span>🌷</span>
+    </div>
+  </main>
+
+  <div class="page-transition" id="pageTransition"></div>
+  <script src="main.js"></script>
+</body>
+</html>

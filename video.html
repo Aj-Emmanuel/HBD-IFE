@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>A Special Video</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body class="page-video">
+
+  <div class="bg-deco">
+    <div class="deco deco-grass"></div>
+    <div class="deco deco-flowers-left"></div>
+    <div class="deco deco-flowers-right"></div>
+  </div>
+
+  <main class="video-main">
+    <div class="top-strip">
+      <span>🎬</span><span>🌸</span><span>🎵</span><span>🎀</span><span>🎬</span><span>🌸</span><span>🎵</span>
+    </div>
+
+    <div class="video-card">
+      <button class="back-btn" onclick="navigateTo('gifts.html')" title="Back">↩</button>
+
+      <div class="video-layout">
+        <!-- Left: floral illustration -->
+        <div class="video-floral">
+          <div class="floral-art">
+            <span class="floral-top">🌸</span>
+            <span class="floral-mid">🌺</span>
+            <span class="floral-left">🌷</span>
+            <span class="floral-right">🌹</span>
+            <span class="floral-bottom">🌸</span>
+            <div class="floral-stem"></div>
+          </div>
+        </div>
+
+        <!-- Right: video player area -->
+        <div class="video-player-area">
+          <!-- YouTube embed — replace VIDEO_ID with your real YouTube video ID -->
+         <div class="yt-container">
+  <video controls>
+    <source src="your-video.mp4" type="video/mp4" />
+  </video>
+</div>
+
+
+    <div class="bottom-strip">
+      <span>🌸</span><span>🎀</span><span>🌷</span><span>💕</span><span>🌸</span><span>🎀</span><span>🌷</span>
+    </div>
+  </main>
+
+  <div class="page-transition" id="pageTransition"></div>
+  <script src="main.js"></script>
+  <script>
+    // Decorative play button toggle for visual effect
+    let playing = false;
+    function toggleYT() {
+      playing = !playing;
+      document.getElementById('playBtn').textContent = playing ? '⏸' : '▶';
+      if (playing) animateProgress();
+    }
+    let prog = 0;
+    function animateProgress() {
+      if (!playing) return;
+      prog = (prog + 0.2) % 100;
+      document.getElementById('progressFill').style.width = prog + '%';
+      requestAnimationFrame(animateProgress);
+    }
+  </script>
+</body>
+</html>

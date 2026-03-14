@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy Birthday!</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body class="page-landing">
+
+  <!-- Decorative background elements -->
+  <div class="bg-deco">
+    <div class="deco deco-grass"></div>
+    <div class="deco deco-flowers-left"></div>
+    <div class="deco deco-flowers-right"></div>
+    <div class="floating-hearts">
+      <span>🌸</span><span>💐</span><span>🎀</span><span>🌷</span><span>✨</span>
+    </div>
+  </div>
+
+  <main class="landing-main">
+    <!-- Top decorative strip -->
+    <div class="top-strip">
+      <span>🎁</span><span>🌸</span><span>🎀</span><span>🌷</span><span>🍰</span><span>🌸</span><span>🎁</span>
+    </div>
+
+    <div class="landing-card">
+      <div class="card-corner card-corner--tl">🌸</div>
+      <div class="card-corner card-corner--tr">🎀</div>
+      <div class="card-corner card-corner--bl">🌷</div>
+      <div class="card-corner card-corner--br">✨</div>
+
+      <h1 class="birthday-title">Happy Birthday <span class="name-highlight">Name!</span></h1>
+
+      <div class="cake-area">
+        <div class="cake-wrapper" id="cakeBtn" onclick="goToGifts()">
+          <div class="cake-emoji">🎂</div>
+          <div class="tap-ripple"></div>
+        </div>
+        <p class="tap-hint">TAP THE CAKE TO<br/><strong>UNLOCK YOUR SURPRISE</strong></p>
+      </div>
+
+      <div class="landing-deco-row">
+        <span>💌</span>
+        <div class="deco-line"></div>
+        <span>🌸</span>
+        <div class="deco-line"></div>
+        <span>🎁</span>
+      </div>
+    </div>
+
+    <!-- Bottom decorative strip -->
+    <div class="bottom-strip">
+      <span>🌸</span><span>🎀</span><span>🌷</span><span>💕</span><span>🌸</span><span>🎀</span><span>🌷</span>
+    </div>
+  </main>
+
+  <!-- Page transition overlay -->
+  <div class="page-transition" id="pageTransition"></div>
+
+  <script src="main.js"></script>
+</body>
+</html>

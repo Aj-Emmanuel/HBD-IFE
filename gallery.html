@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Gallery of Love</title>
+  <link rel="stylesheet" href="style.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@600;700&family=Quicksand:wght@400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body class="page-gallery">
+
+  <div class="bg-deco">
+    <div class="deco deco-grass"></div>
+    <div class="deco deco-flowers-left"></div>
+    <div class="deco deco-flowers-right"></div>
+  </div>
+
+  <main class="gallery-main">
+    <div class="top-strip">
+      <span>📸</span><span>🌸</span><span>💕</span><span>🎀</span><span>📸</span><span>🌸</span><span>💕</span>
+    </div>
+
+    <div class="gallery-card">
+      <button class="back-btn" onclick="navigateTo('gifts.html')" title="Back">↩</button>
+
+      <h2 class="gallery-title">Gallery of Love</h2>
+
+      <div class="gallery-layout">
+
+        <!-- Left column: 3 stacked small photos -->
+        <div class="gallery-left-col">
+          <div class="photo-slot photo-slot--sm" style="--r: -2deg">
+            <div class="photo-inner">
+              <img src="11.jpeg" alt="memory" />
+            </div>
+          </div>
+          <div class="photo-slot photo-slot--sm" style="--r: 1.5deg">
+            <div class="photo-inner">
+              <img src="4.jpeg" alt="memory" />
+            </div>
+          </div>
+          <div class="photo-slot photo-slot--sm" style="--r: -1deg">
+            <div class="photo-inner">
+              <img src="3.jpeg" alt="memory" />
+            </div>
+          </div>
+        </div>
+
+        <!-- Center: large featured photo with ribbon bow -->
+        <div class="gallery-center-col">
+          <div class="featured-frame">
+            <div class="frame-bow">🎀</div>
+            <img src="2.jpeg" class="featured-img" alt="Our memory" />
+          </div>
+          <p class="gallery-caption">Every moment with you is a memory I cherish deeply 💕</p>
+        </div>
+
+        <!-- Right column: 2 stacked photos + text -->
+        <div class="gallery-right-col">
+          <div class="photo-slot photo-slot--sm" style="--r: 2deg">
+            <div class="photo-inner">
+              <img src="5.jpeg" alt="memory" />
+            </div>
+            <span class="photo-text-label">Smile like no other</span>
+          </div>
+          <div class="photo-slot photo-slot--sm" style="--r: -1.5deg">
+            <div class="photo-inner">
+              <img src="6.jpeg" alt="memory" />
+            </div>
+            <span class="photo-text-label">Stunning beauty</span>
+          </div>
+          <div class="cute-piggy">🐷</div>
+        </div>
+
+      </div>
+    </div>
+
+    <div class="bottom-strip">
+      <span>🌸</span><span>🎀</span><span>🌷</span><span>💕</span><span>🌸</span><span>🎀</span><span>🌷</span>
+    </div>
+  </main>
+
+  <div class="page-transition" id="pageTransition"></div>
+  <script src="main.js"></script>
+</body>
+</html>
